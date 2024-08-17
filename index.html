@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Account</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <input type="checkbox" id="toggle" hidden>
+
+  <header>
+    <div>
+      <label class="account-label" for="toggle">Create an Account</label>
+      <span class="account">Create an Account</span>
+    </div>
+    <div>
+      <label class="profile-label" for="toggle">Profile</label>
+      <span class="profile">Profile</span>
+    </div>
+  </header>
+
+  <div class="container" id="account">
+    <h2>Create an Account</h2>
+    <section class="name">
+      <div class="start">
+        <label for="full_name">First Name</label>
+        <input type="text" id="full_name" name="full_name" required>
+        <label for="Last_name">Last Name</label>
+        <input type="text" id="full_name" name="full_name" required>
+      </div>
+    </section>
+
+    <section class="e-mail">
+      <div class="end">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <span>We'll never share your email with anyone else.</span>
+      </div>
+    </section>
+
+    <section class="gender">
+      <label for="male">Male
+        <input type="radio" name="gender" checked>
+        <span class="checkmark"></span>
+      </label>
+      <label for="female">Female
+        <input type="radio" name="gender">
+        <span class="checkmark"></span>
+      </label>
+    </section>
+
+    <section class="adress">
+      <div class="start">
+        <label for="country">Country</label>
+        <div class="dropbown">
+          <select id="country" name="country" required>
+            <option value="" selected disabled hidden></option>
+            <option value="ukraine">Ukraine</option>
+          </select>
+        </div>
+      </div>
+      <div class="start">
+        <label for="city">City</label>
+        <div class="dropbown">
+          <select id="city" name="city" required>
+            <option value="" selected disabled hidden></option>
+            <option value="kyiv">Kyiv</option>
+            <option value="lviv">Lviv</option>
+            <option value="zhytomyr">Zhytomyr</option>
+            <option value="kharkiv">Kharkiv</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="sign-up">
+      <button>Sign Up</button>
+      <span>By clicking the 'Sign Up' button, you confirm that you accept our <a href="">Terms of Use</a> and <a
+          href="">Privacy Policy</a></span>
+    </section>
+    <hr>
+    <footer>
+      <p>Have an account?</p>
+      <a href="">Log In</a>
+    </footer>
+  </div>
+
+  <div class="container" id="profile">
+    <h2>Profile</h2>
+    <div class="ava"><img src="./Image.png" alt="ava"></div>
+    <div class="ava">
+      <section class="name">
+        <div class="start">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+      </section>
+    </div>
+
+    <section class="e-mail">
+      <div class="start">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+    </section>
+
+    <section class="adress">
+      <div class="start">
+        <label for="country">Country</label>
+        <div class="dropbown">
+          <select id="country" name="country" required>
+            <option value="" selected disabled hidden></option>
+            <option value="ukraine">Ukraine</option>
+          </select>
+        </div>
+      </div>
+      <div class="start">
+        <label for="city">City</label>
+        <div class="dropbown">
+          <select id="city" name="city" required>
+            <option value="" selected disabled hidden></option>
+            <option value="kyiv">Kyiv</option>
+            <option value="lviv">Lviv</option>
+            <option value="zhytomyr">Zhytomyr</option>
+            <option value="kharkiv">Kharkiv</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="name">
+      <div class="start">
+        <label for="zip">Zip Code</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone Number</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+    </section>
+
+    <section class="Update">
+      <button>Update</button>
+    </section>
+  </div>
+</body>
+
+</html>
