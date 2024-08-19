@@ -13,11 +13,13 @@ body {
 .container {
   width: 570px;
   margin: auto;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 section {
   margin-bottom: 20px;
+  display: flex;
+  gap: 50px;
 }
 
 .sign-up>span {
@@ -32,41 +34,66 @@ span {
   font-size: 13px;
 }
 
+
+
+.name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 67px;
+  width: 530px;
+  gap: 10px
+}
+
+.name label {
+  font-family: Arial, sans-serif;
+  margin-bottom: 5px;
+}
+
+.name input {
+  border: 1px solid #8b8888;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.finish {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80px;
+  gap: 10px
+}
+
+.finish input {
+  border: 1px solid #8b8888;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.finish label {
+  font-family: Arial, sans-serif;
+  margin-bottom: 5px;
+}
+
 .gender {
-  display:flex;
+  display: flex;
 }
 
 .gender>label {
   font-size: 15px;
-  width: 100px;
+  width: 80px;
 }
 
 .start {
   display: inline-block;
   margin: auto;
   width: 280px;
-}
-.end  input {
-  margin-top: 7px;
-  width: 520px;
-  height: 24px;
-  border-radius: 6px;
-  border-color: lightgray;
-  border-style: solid;
-}
-
-input:hover {
-  border-color: #007BFF;
-  background-color: #eee;
-}
-
-.dropbown select {
-  margin-top: 7px;
-  width: 245px;
-  height: 28px;
-  border-radius: 6px;
-  border-color: lightgray;
-  border-style: solid;
 }
 
 .start label {
@@ -80,7 +107,24 @@ input:hover {
   height: 24px;
   border-radius: 6px;
   border-color: lightgray;
-  border-style: solid;
+  border: 2px solid #9e9b9b;
+}
+
+.end input {
+  margin-top: 7px;
+  width: 520px;
+  height: 24px;
+  border-radius: 4px;
+  border: 2px solid #9e9b9b;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+input:hover {
+  border-color: #007BFF;
+  background-color: #eee;
 }
 
 #toggle:not(:checked)+header .account-label,
@@ -96,33 +140,14 @@ header span {
   color: #007BFF;
 }
 
-input {
-  width: 180px;
-  height: 29px;
-  border-radius: 5px;
-}
-
-input:hover {
-  border-color: #007BFF;
-  background-color: #eee;
-}
-
 a {
   text-decoration: none;
   color: #007BFF;
 }
 
 h2 {
-  margin-bottom: 50px;
-}
-
-input[type="radio"] {
-  display: flex;
-  justify-self:center;
-  align-items: start;
-  width: 15px;
-  margin-right: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 hr {
@@ -130,11 +155,14 @@ hr {
   margin-right: 40px;
 }
 
-
 select {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 245px;
   height: 29px;
   border-radius: 5px;
+  gap: 10px
 }
 
 footer {
@@ -146,7 +174,7 @@ footer>* {
 }
 
 p {
-  display:grid;
+  display: grid;
 }
 
 button {
@@ -173,4 +201,57 @@ button {
   margin-top: 20px;
   margin-bottom: 18px;
   cursor: pointer;
+}
+
+.profile-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+img{
+  Width:80px;
+  Height:80px;
+}
+.profile-container>button{
+  width: 150px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fefefefd;
+  color: #fff;
+  font-size: 5px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 2px solid #f2ebeb9f;
+} 
+
+.profile-container>button>img {
+  width: 250px;
+  height: 14px;
+}
+
+.ggg button {
+  width: 40px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #fff;
+  font-size: 5px;
+  border: 2px solid #f2ebeb9f;
+}
+.ggg button>img {
+  width: 30px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #fff;
+  font-size: 5px;
+}
+
+.address{
+  display: flex;
+  gap: 20px;
 }
