@@ -13,11 +13,16 @@ body {
 .container {
   width: 570px;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 section {
   margin-bottom: 20px;
+}
+
+.adress{
+  display: flex;
+  gap: 76px;
 }
 
 .sign-up>span {
@@ -184,6 +189,7 @@ button {
   margin-top: 20px;
   margin-bottom: 18px;
   cursor: pointer;
+  gap: 40px;
 }
 
 .Update>button {
@@ -204,13 +210,16 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  margin-top: 40px;
+  margin-top: 50px;
+  height: 80px;
+  gap: 20px;
 }
 
 img{
   Width:80px;
   Height:80px;
 }
+
 .profile-container>button{
   width: 150px;
   height: 20px;
@@ -245,10 +254,4 @@ img{
   background-color: #fff;
   color: #fff;
   font-size: 5px;
-}
-
-/*
-.address{
-  display: flex;
-  gap: 20px;
 }
